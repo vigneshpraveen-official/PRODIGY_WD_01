@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V8 Food Restaurrant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1>V8 Food Restaurant</h1>
+            <h3>Bringing Food to Your Doorstep</h3>
+            <h3>Serve Happiness | Serve Food</h3>
+        </div>
+        <nav class="navigation">
+            <br>
+            <br>
+            <br>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <section id="home" class="section">
+            <div class="hero">
+                <h2>Welcome to V8 Food Restaurant</h2>
+                <p>Your favorite restaurants delivered right to your door.</p>
+                <button class="cta-button">Order Now</button>
+            </div>
+        </section> -->
+
+        <section id="restaurants" class="section">
+            <h2>Our V8 Top Restaurants</h2>
+            <div class="restaurant-list">
+                <!-- Restaurant 1 -->
+                <div class="restaurant">
+                    <img src="images/restaurant1.jpg" alt="Restaurant 1">
+                    <h3>Italian Bistro</h3>
+                    <button class="menu-button" onclick="showMenu('menu-1')">View Menu</button>
+                    <div id="menu-1" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Margherita Pizza - $12</li>
+                            <li>Lasagna - $15</li>
+                            <li>Spaghetti Carbonara - $14</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('Italian Bistro')">Order Now</button>
+                    </div>
+                </div>
+                <!-- Restaurant 2 -->
+                <div class="restaurant">
+                    <img src="images/restaurant2.jpg" alt="Restaurant 2">
+                    <h3>Tokyo Sushi House</h3>
+                    <button class="menu-button" onclick="showMenu('menu-2')">View Menu</button>
+                    <div id="menu-2" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Sushi Roll - $18</li>
+                            <li>Tempura Udon - $14</li>
+                            <li>Ramen - $13</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('Tokyo Sushi House')">Order Now</button>
+                    </div>
+                </div>
+                <!-- Restaurant 3 -->
+                <div class="restaurant">
+                    <img src="images/restaurant3.jpg" alt="Restaurant 3">
+                    <h3>Spicy Indian Delights</h3>
+                    <button class="menu-button" onclick="showMenu('menu-3')">View Menu</button>
+                    <div id="menu-3" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Chicken Tikka Masala - $16</li>
+                            <li>Butter Naan - $4</li>
+                            <li>Paneer Butter Masala - $15</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('Spicy Indian Delights')">Order Now</button>
+                    </div>
+                </div>
+                <!-- Restaurant 4 -->
+                <div class="restaurant">
+                    <img src="images/restaurant4.jpg" alt="Restaurant 4">
+                    <h3>Tex-Mex Grill</h3>
+                    <button class="menu-button" onclick="showMenu('menu-4')">View Menu</button>
+                    <div id="menu-4" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Tacos - $10</li>
+                            <li>Beef Burrito - $12</li>
+                            <li>Quesadilla - $11</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('Tex-Mex Grill')">Order Now</button>
+                    </div>
+                </div>
+                <!-- Restaurant 5 -->
+                <div class="restaurant">
+                    <img src="images/restaurant5.jpg" alt="Restaurant 5">
+                    <h3>French Bistro</h3>
+                    <button class="menu-button" onclick="showMenu('menu-5')">View Menu</button>
+                    <div id="menu-5" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Croissant - $6</li>
+                            <li>Beef Bourguignon - $20</li>
+                            <li>Quiche Lorraine - $14</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('French Bistro')">Order Now</button>
+                    </div>
+                </div>
+                <!-- Restaurant 6 -->
+                <div class="restaurant">
+                    <img src="images/restaurant6.jpg" alt="Restaurant 6">
+                    <h3>Greek Tavern</h3>
+                    <button class="menu-button" onclick="showMenu('menu-6')">View Menu</button>
+                    <div id="menu-6" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Moussaka - $17</li>
+                            <li>Souvlaki - $12</li>
+                            <li>Tzatziki - $7</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('Greek Tavern')">Order Now</button>
+                    </div>
+                </div>
+                <!-- Restaurant 7 -->
+                <div class="restaurant">
+                    <img src="images/restaurant7.jpg" alt="Restaurant 7">
+                    <h3>Middle Eastern Feast</h3>
+                    <button class="menu-button" onclick="showMenu('menu-7')">View Menu</button>
+                    <div id="menu-7" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Kebabs - $14</li>
+                            <li>Falafel - $9</li>
+                            <li>Hummus - $8</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('Middle Eastern Feast')">Order Now</button>
+                    </div>
+                </div>
+                <!-- Restaurant 8 -->
+                <div class="restaurant">
+                    <img src="images/restaurant8.jpg" alt="Restaurant 8">
+                    <h3>American Diner</h3>
+                    <button class="menu-button" onclick="showMenu('menu-8')">View Menu</button>
+                    <div id="menu-8" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Burger - $11</li>
+                            <li>Fries - $5</li>
+                            <li>Milkshake - $7</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('American Diner')">Order Now</button>
+                    </div>
+                </div>
+                <!-- Restaurant 9 -->
+                <div class="restaurant">
+                    <img src="images/restaurant9.jpg" alt="Restaurant 9">
+                    <h3>Vegan Eats</h3>
+                    <button class="menu-button" onclick="showMenu('menu-9')">View Menu</button>
+                    <div id="menu-9" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Quinoa Salad - $12</li>
+                            <li>Vegan Burrito - $13</li>
+                            <li>Fruit Smoothie - $8</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('Vegan Eats')">Order Now</button>
+                    </div>
+                </div>
+                <!-- Restaurant 10 -->
+                <div class="restaurant">
+                    <img src="images/restaurant10.jpg" alt="Restaurant 10">
+                    <h3>Seafood Haven</h3>
+                    <button class="menu-button" onclick="showMenu('menu-10')">View Menu</button>
+                    <div id="menu-10" class="menu">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Grilled Salmon - $22</li>
+                            <li>Shrimp Scampi - $19</li>
+                            <li>Crab Cakes - $16</li>
+                        </ul>
+                        <button class="order-button" onclick="orderFood('Seafood Haven')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Send us your feedback or inquiries.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 V8 Food Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
